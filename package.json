@@ -1,0 +1,19 @@
+{
+  "name": "practice-react-js",
+  "version": "1.0.0",
+  "description": "This is a Practice React Js app project.",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flowwen/PracticeReactJs.git"
+  },
+  "author": "Prathamesh Patil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Flowwen/PracticeReactJs/issues"
+  },
+  "homepage": "https://github.com/Flowwen/PracticeReactJs#readme"
+}
