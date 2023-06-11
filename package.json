@@ -2,7 +2,6 @@
   "name": "practice-react-js",
   "version": "1.0.0",
   "description": "This is a Practice React Js app project.",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
@@ -17,6 +16,14 @@
   },
   "homepage": "https://github.com/Flowwen/PracticeReactJs#readme",
   "devDependencies": {
-    "parcel": "^2.9.2"
-  }
+    "parcel": "^2.9.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist" : [
+    "last 2 versions"
+  ]
 }
