@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Flowwen/PracticeReactJs/issues"
   },
-  "homepage": "https://github.com/Flowwen/PracticeReactJs#readme"
+  "homepage": "https://github.com/Flowwen/PracticeReactJs#readme",
+  "devDependencies": {
+    "parcel": "^2.9.2"
+  }
 }
