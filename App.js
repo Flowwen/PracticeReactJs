@@ -23,6 +23,9 @@ const HeadingComponent = () => (
   <div id="container">
     {title}
     <h1 id="heading">Namaste React from a functional Component 🙏</h1>
+    <FooterComponent></FooterComponent>
+    <FooterComponent/>
+    {FooterComponent()}
   </div>
 );
 
