@@ -7,7 +7,16 @@ const jsxHeading = (
   </h1>
 );
 
+//React functional Component.
+
+const HeadingComponent = () => (
+  <div id="container">
+    <h1 id="heading">Namaste React from a functional Component 🙏</h1>
+  </div>
+);
+
 const rootElem = document.getElementById("root");
+
 const root = ReactDOM.createRoot(rootElem);
 
-root.render(jsxHeading);
+root.render(<HeadingComponent />);
