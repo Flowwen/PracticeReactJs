@@ -1,3 +1,17 @@
-#heading{
-    color:coral;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+}
+
+
+.nav-items > ul {
+  font-size: 20px;
+  display: flex;
+  list-style-type: none; /*Removes the default list decoration*/
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
 }
