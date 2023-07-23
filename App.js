@@ -40,18 +40,793 @@ const Header = () => {
   );
 };
 
-const RestaurantCard = () => {
+const resList = [
+  {
+    info: {
+      id: "28789",
+      name: "Domino's Pizza",
+      cloudinaryImageId: "enrxsgw7dtly6y9tv85i",
+      locality: "Capurbawdi, Ghodbandar Road",
+      areaName: "Thane West",
+      costForTwo: "₹400 for two",
+      cuisines: ["Pizzas", "Italian", "Pastas", "Desserts"],
+      avgRating: 3.9,
+      feeDetails: {
+        restaurantId: "28789",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 3200,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 3200,
+      },
+      parentId: "2456",
+      avgRatingString: "3.9",
+      totalRatingsString: "10K+",
+      sla: {
+        deliveryTime: 25,
+        serviceability: "SERVICEABLE",
+        slaString: "25 mins",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-23 23:59:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "₹125 OFF",
+        subHeader: "ABOVE ₹999",
+        discountTag: "FLAT DEAL",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    },
+    analytics: {
+      context: "seo-data-3faeadd5-4e46-41f5-b8fc-b0fd010bbad4",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/dominos-pizza-capurbawdi-ghodbandar-road-thane-west-mumbai-28789",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "23740",
+      name: "McDonald's",
+      cloudinaryImageId: "ee5f8e06b300efc07c9fe3f4df40dfc4",
+      locality: "Lake City Mall",
+      areaName: "Thane West",
+      costForTwo: "₹400 for two",
+      cuisines: ["Burgers", "Beverages", "Cafe", "Desserts"],
+      avgRating: 4.3,
+      feeDetails: {
+        restaurantId: "23740",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 3200,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 3200,
+      },
+      parentId: "630",
+      avgRatingString: "4.3",
+      totalRatingsString: "10K+",
+      sla: {
+        deliveryTime: 19,
+        lastMileTravel: 0.3,
+        serviceability: "SERVICEABLE",
+        slaString: "19 mins",
+        lastMileTravelString: "0.3 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-23 23:45:00",
+        opened: true,
+      },
+      badges: {
+        textExtendedBadges: [
+          {
+            iconId: "guiltfree/GF_Logo_android_3x",
+            shortDescription: "options available",
+            fontColor: "#7E808C",
+          },
+        ],
+      },
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {
+            badgeObject: [
+              {
+                attributes: {
+                  description: "",
+                  fontColor: "#7E808C",
+                  iconId: "guiltfree/GF_Logo_android_3x",
+                  shortDescription: "options available",
+                },
+              },
+            ],
+          },
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "10% OFF",
+        subHeader: "ABOVE ₹999",
+        discountTag: "FLAT DEAL",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    },
+    analytics: {
+      context: "seo-data-3faeadd5-4e46-41f5-b8fc-b0fd010bbad4",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/mcdonalds-lake-city-mall-thane-west-mumbai-23740",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "221810",
+      name: "Burger King",
+      cloudinaryImageId: "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+      locality: "Lake City Mall",
+      areaName: "Thane West",
+      costForTwo: "₹350 for two",
+      cuisines: ["Burgers", "American"],
+      avgRating: 4.2,
+      feeDetails: {
+        restaurantId: "221810",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 3200,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 3200,
+      },
+      parentId: "166",
+      avgRatingString: "4.2",
+      totalRatingsString: "10K+",
+      sla: {
+        deliveryTime: 19,
+        lastMileTravel: 0.3,
+        serviceability: "SERVICEABLE",
+        slaString: "19 mins",
+        lastMileTravelString: "0.3 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-24 03:45:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "60% OFF",
+        subHeader: "UPTO ₹120",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    },
+    analytics: {
+      context: "seo-data-3faeadd5-4e46-41f5-b8fc-b0fd010bbad4",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/burger-king-lake-city-mall-thane-west-mumbai-221810",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "369088",
+      name: "KFC",
+      cloudinaryImageId: "56c9ab92bd79745fd152a30fa2525426",
+      locality: "Viviana Mall",
+      areaName: "Thane",
+      costForTwo: "₹400 for two",
+      cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
+      avgRating: 3.9,
+      feeDetails: {
+        restaurantId: "369088",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 3200,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 3200,
+      },
+      parentId: "547",
+      avgRatingString: "3.9",
+      totalRatingsString: "1K+",
+      sla: {
+        deliveryTime: 26,
+        lastMileTravel: 1.4,
+        serviceability: "SERVICEABLE",
+        slaString: "26 mins",
+        lastMileTravelString: "1.4 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-23 23:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "40% OFF",
+        subHeader: "UPTO ₹80",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    },
+    analytics: {
+      context: "seo-data-3faeadd5-4e46-41f5-b8fc-b0fd010bbad4",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/kfc-viviana-mall-thane-mumbai-369088",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "710826",
+      name: "The Belgian Waffle Co.",
+      cloudinaryImageId: "2e42bde2a2229b2f21bccfc4b64ef7ca",
+      locality: "LAKE CITY MALL",
+      areaName: "THANE KAPURBAWDI JUNTION",
+      costForTwo: "₹200 for two",
+      cuisines: ["Waffle", "Desserts", "Ice Cream"],
+      avgRating: 4.6,
+      veg: true,
+      feeDetails: {
+        restaurantId: "710826",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 3200,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 3200,
+      },
+      parentId: "2233",
+      avgRatingString: "4.6",
+      totalRatingsString: "100+",
+      sla: {
+        deliveryTime: 29,
+        lastMileTravel: 0.3,
+        serviceability: "SERVICEABLE",
+        slaString: "29 mins",
+        lastMileTravelString: "0.3 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-23 23:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "20% OFF",
+        subHeader: "UPTO ₹50",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      isNewlyOnboarded: true,
+    },
+    analytics: {
+      context: "seo-data-3faeadd5-4e46-41f5-b8fc-b0fd010bbad4",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/the-belgian-waffle-co-lake-city-mall-thane-kapurbawdi-juntion-mumbai-710826",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "31779",
+      name: "Subway",
+      cloudinaryImageId: "1ace5fa65eff3e1223feb696c956b38b",
+      locality:
+        "Eastern Express Highway, Near Jupiter Hospital, Majiwada, Thane West",
+      areaName: "Thane West",
+      costForTwo: "₹350 for two",
+      cuisines: ["Salads", "Snacks", "Desserts", "Beverages"],
+      avgRating: 4,
+      feeDetails: {
+        restaurantId: "31779",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 3200,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 3200,
+      },
+      parentId: "2",
+      avgRatingString: "4.0",
+      totalRatingsString: "5K+",
+      sla: {
+        deliveryTime: 30,
+        lastMileTravel: 1.8,
+        serviceability: "SERVICEABLE",
+        slaString: "30 mins",
+        lastMileTravelString: "1.8 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-23 23:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "50% OFF",
+        subHeader: "UPTO ₹100",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    },
+    analytics: {
+      context: "seo-data-3faeadd5-4e46-41f5-b8fc-b0fd010bbad4",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/subway-eastern-express-highway-near-jupiter-hospital-majiwada-thane-west-mumbai-31779",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "27414",
+      name: "Pizza Hut",
+      cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
+      locality: "Thane West",
+      areaName: "Thane West",
+      costForTwo: "₹300 for two",
+      cuisines: ["Pizzas"],
+      avgRating: 3.6,
+      feeDetails: {
+        restaurantId: "27414",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 3800,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 3800,
+      },
+      parentId: "721",
+      avgRatingString: "3.6",
+      totalRatingsString: "5K+",
+      sla: {
+        deliveryTime: 38,
+        lastMileTravel: 3,
+        serviceability: "SERVICEABLE",
+        slaString: "38 mins",
+        lastMileTravelString: "3.0 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-23 23:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "50% OFF",
+        subHeader: "UPTO ₹100",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    },
+    analytics: {
+      context: "seo-data-3faeadd5-4e46-41f5-b8fc-b0fd010bbad4",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/pizza-hut-thane-west-mumbai-27414",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "450152",
+      name: "La Pino'z Pizza",
+      cloudinaryImageId: "sqjtrlhnu79ob6ge1g7b",
+      locality: "Thane",
+      areaName: "Hiranandani Meadows",
+      costForTwo: "₹400 for two",
+      cuisines: ["Pizzas", "Pastas", "Italian", "Desserts", "Beverages"],
+      avgRating: 3.8,
+      feeDetails: {
+        restaurantId: "450152",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 3200,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 3200,
+      },
+      parentId: "4961",
+      avgRatingString: "3.8",
+      totalRatingsString: "1K+",
+      sla: {
+        deliveryTime: 28,
+        lastMileTravel: 2.4,
+        serviceability: "SERVICEABLE",
+        slaString: "28 mins",
+        lastMileTravelString: "2.4 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-24 05:30:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "50% OFF",
+        subHeader: "UPTO ₹100",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+    },
+    analytics: {
+      context: "seo-data-3faeadd5-4e46-41f5-b8fc-b0fd010bbad4",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/la-pinoz-pizza-thane-hiranandani-meadows-mumbai-450152",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+  {
+    info: {
+      id: "694953",
+      name: "Kwality Walls Frozen Dessert and Ice Cream Shop",
+      cloudinaryImageId: "7e526a0c0ed3cd56eefac3d318c78977",
+      locality: "Muktai Nagar",
+      areaName: "Thane",
+      costForTwo: "₹200 for two",
+      cuisines: ["Ice Cream", "Desserts"],
+      avgRating: 4.2,
+      feeDetails: {
+        restaurantId: "694953",
+        fees: [
+          {
+            name: "BASE_DISTANCE",
+            fee: 3200,
+          },
+          {
+            name: "BASE_TIME",
+          },
+          {
+            name: "ANCILLARY_SURGE_FEE",
+          },
+        ],
+        totalFee: 3200,
+      },
+      parentId: "582",
+      avgRatingString: "4.2",
+      totalRatingsString: "50+",
+      sla: {
+        deliveryTime: 19,
+        lastMileTravel: 0.9,
+        serviceability: "SERVICEABLE",
+        slaString: "19 mins",
+        lastMileTravelString: "0.9 km",
+        iconType: "ICON_TYPE_EMPTY",
+      },
+      availability: {
+        nextCloseTime: "2023-07-30 00:00:00",
+        opened: true,
+      },
+      badges: {},
+      isOpen: true,
+      type: "F",
+      badgesV2: {
+        entityBadges: {
+          imageBased: {},
+          textBased: {},
+          textExtendedBadges: {},
+        },
+      },
+      aggregatedDiscountInfoV3: {
+        header: "50% OFF",
+        subHeader: "UPTO ₹100",
+      },
+      orderabilityCommunication: {
+        title: {},
+        subTitle: {},
+        message: {},
+        customIcon: {},
+      },
+      differentiatedUi: {
+        displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        differentiatedUiMediaDetails: {
+          mediaType: "ADS_MEDIA_ENUM_IMAGE",
+          lottie: {},
+          video: {},
+        },
+      },
+      reviewsSummary: {},
+      displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      isNewlyOnboarded: true,
+    },
+    analytics: {
+      context: "seo-data-3faeadd5-4e46-41f5-b8fc-b0fd010bbad4",
+    },
+    cta: {
+      link: "https://www.swiggy.com/restaurants/kwality-walls-frozen-dessert-and-ice-cream-shop-muktai-nagar-thane-mumbai-694953",
+      text: "RESTAURANT_MENU",
+      type: "WEBLINK",
+    },
+    widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+  },
+];
+
+const RestaurantCard = (props) => {
+  const { resData } = props;
+
+  const { cloudinaryImageId, name, cuisines, avgRating, costForTwo } =
+    resData?.info;
+
+  const { slaString } = resData?.info?.sla;
+
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
         className="res-logo"
         alt="res-logo"
-        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/h4yqggh2menundndcrmc"
+        src={
+          "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" +
+          cloudinaryImageId
+        }
       />
-      <h3>Santosham</h3>
-      <h4>Dosa, South Indian, Asian </h4>
-      <h4>3.7 stars</h4>
-      <h4>22 minutes</h4>
+      <h3>{name}</h3>
+      <h4>{cuisines.join(", ")} </h4>
+      <h4>{avgRating} stars</h4>
+      <h4>{costForTwo}</h4>
+      <h4>{slaString}</h4>
     </div>
   );
 };
@@ -61,12 +836,9 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="restaurant-container">
-        <RestaurantCard />  
-        <RestaurantCard />  
-        <RestaurantCard />  
-        <RestaurantCard />  
-        <RestaurantCard />  
-        <RestaurantCard />  
+        {resList.map((restaurant) => (
+          <RestaurantCard key={restaurant.info.id} resData = {restaurant} />
+        ))}
       </div>
     </div>
   );
